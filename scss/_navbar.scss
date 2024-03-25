@@ -1,0 +1,31 @@
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 5;
+  .navbar-main-container {
+    padding-block: 24px;
+    .navbar-container {
+      width: 100%;
+      .row {
+        align-items: center;
+        .col-lg-4 {
+          h1 {
+            color: $primary-color;
+            font-size: 22px;
+            font-family: $font-italiana;
+            max-width: 80%;
+          }
+          .logo-container {
+            margin: 0 auto;
+            text-align: center;
+          }
+          .button-container{
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

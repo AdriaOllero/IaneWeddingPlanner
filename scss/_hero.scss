@@ -1,0 +1,69 @@
+//// HERO  ////
+.hero-main-container {
+  width: 100%;
+  height: 100svh;
+  position: relative;
+
+  .hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .hero-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    .row {
+      width: 100%;
+
+      // CONTACT BOX
+      .contactBoxes-main-container {
+        .contactBoxes-container {
+        }
+      }
+
+      // TEXT CONTAINER
+      .text-main-container {
+        width: 100%;
+        .text-container {
+          text-align: center;
+          .deco-text {
+            max-width: 50%;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+            margin-bottom: 32px;
+            .line {
+              flex-grow: 1;
+              height: 1px;
+              background-color: $primary-color;
+            }
+
+            h3 {
+              color: $primary-color;
+              text-align: center;
+              font-family: $font-italiana;
+              font-size: 32px;
+              margin-inline: 32px;
+            }
+          }
+
+          h2 {
+            color: $primary-color;
+            text-align: center;
+            font-family: $font-aesthetic;
+            font-size: 92px;
+          }
+        }
+      }
+    }
+  }
+}
