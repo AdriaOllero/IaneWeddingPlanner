@@ -13,7 +13,7 @@ nav {
         .col-lg-4 {
           h1 {
             color: $primary-color;
-            font-size: 22px;
+            font-size: clamp(16px,1.146vw, 22px);
             font-family: $font-italiana;
             max-width: 80%;
           }
