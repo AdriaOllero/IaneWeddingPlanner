@@ -1,0 +1,55 @@
+.about-main-container {
+  .about-container {
+    // IMAGE
+    .image-main-container {
+      text-align: center;
+      margin-bottom: 48px;
+      .image-container {
+        position: relative;
+
+        .flowers-deco-right {
+          position: absolute;
+          top: -50px;
+          right: 200px;
+        }
+        .flowers-deco-left {
+          position: absolute;
+          top: -50px;
+          left: 200px;
+          transform: scaleX(-1);
+        }
+        .main-image {
+          max-width: 350px;
+          height: auto;
+          border-radius: 200px;
+          outline: 1px solid $secondary-color;
+          outline-offset: 20px;
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+
+    // TEXT
+    .text-main-container {
+      text-align: center;
+      .text-container {
+        h2 {
+          font-size: clamp(64px, 6.458vw, 124px);
+          font-family: $font-aesthetic;
+          color: $secondary-color;
+        }
+        p {
+          font-size: 1rem;
+          font-family: $font-montserrat;
+          max-width: 1062px;
+          margin: 0 auto;
+        }
+
+        .button-container {
+          margin-top: 36px;
+        }
+      }
+    }
+  }
+}

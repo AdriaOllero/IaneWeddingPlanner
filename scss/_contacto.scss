@@ -1,0 +1,50 @@
+.contact-main-container {
+  .contact-container {
+    // TEXT
+
+    .text-main-container {
+      .text-container {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+          max-width: 75%;
+        }
+      }
+    }
+
+    // BOXES
+    .contact-boxes-container {
+      .contact-boxes {
+        .box-item {
+          height: 100%;
+          border: 1px solid $accent-color;
+          background-color: #fff7e8;
+          a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 300ms all;
+            img {
+              padding-block: 36px;
+            }
+            h2 {
+              font-size: clamp(24px, 2.813vw, 54px);
+              font-family: $font-italiana;
+              color: $accent-color;
+              margin-left: 24px;
+            }
+          }
+
+          &:hover {
+            background-color: #8b212a36;
+          }
+        }
+      }
+    }
+  }
+}
