@@ -1,5 +1,5 @@
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 100%;
@@ -33,7 +33,7 @@ nav {
             margin: 0 auto;
             text-align: center;
           }
-          .button-container {
+          .btn-nav-container {
             text-align: right;
           }
         }

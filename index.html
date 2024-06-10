@@ -48,7 +48,6 @@
     <!-- NAVBAR -->
     <nav>
       <div class="navbar-main-container main-container">
-        <div class="mask-cover"></div>
         <div class="navbar-container">
           <div class="row">
             <div class="col-lg-4">
@@ -64,7 +63,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="button-container">
+              <div class="btn-nav-container">
                 <a href="#!" target="_blank" class="btn-white">Contactar</a>
               </div>
             </div>
@@ -267,36 +266,69 @@
           <div class="services-main-container gPadd">
             <div class="services-container">
               <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-6 mb-5 p-4">
                   <div class="service-item">
-                    <h2>Wedding Planning</h2>
+                    <h2 class="red">Organización integral</h2>
                     <p>
-                      Desde que tengo uso de razón siempre me ha gustado vivir
-                      las cosas apasionadamente
+                      Cerrar los ojos e imaginad por un instante que estáis en
+                      el cómodo sofá de vuestra casa, saboreando un buen vino,
+                      mientras soñáis despiertos cómo será vuestra boda, porque
+                      en nuestra
                     </p>
                     <div class="button-container">
                       <a class="btn-black" href="#!">Conóce más</a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6 mb-5 p-4">
                   <div class="service-item">
-                    <h2>Photography Service</h2>
+                    <h2 class="red">Proyecto de decoración</h2>
                     <p>
-                      Desde que tengo uso de razón siempre me ha gustado vivir
-                      las cosas apasionadamente
+                      La decoración de tu boda, es lo que refleja absolutamente
+                      vuestra personalidad en el día más especial de vuestras
+                      vidas. Hay un cambio brutal en una boda con una decoración
+                      estudiada, planificada y elegida escrupulosamente, a una
+                      boda que hemos cogido una cosa de allí, otra de aquí, y la
+                      hemos unido, pero nada tiene sentido. Desde las flores,
+                      las telas, texturas, papelería, detalles…¡todo importa!
                     </p>
                     <div class="button-container">
                       <a class="btn-black" href="#!">Conóce más</a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6 mb-5 p-4">
                   <div class="service-item">
-                    <h2>Decoración</h2>
+                    <h2 class="red">Coordinación del día de la boda</h2>
                     <p>
-                      Desde que tengo uso de razón siempre me ha gustado vivir
-                      las cosas apasionadamente
+                      El día de tu boda, tienes que estar pendiente solamente de
+                      disfrutar. ¿Te imaginas levantarte el día de tu boda,
+                      colocarte el pinganillo en la oreja, y comenzar a
+                      coordinar tu día? Es verdad que éste servicio a priori es
+                      el menos valorado de primeras, porque hasta el día de la
+                      boda, no se aprecia el trabajazo que hay detrás. Las
+                      parejas que contratan éste servicio una vez pasada la boda
+                      es del que más se alegran de haber contado con él, y las
+                      parejas que no lo contratan al pasar la boda se
+                      arrepienten de ello.
+                    </p>
+                    <div class="button-container">
+                      <a class="btn-black" href="#!">Conóce más</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-5 p-4">
+                  <div class="service-item">
+                    <h2 class="red">Asesorías Online</h2>
+                    <p>
+                      El “botón del pánico”, aquí tu servicio “Pepito grillo”.
+                      Éste servicio es tu salvación si te ves agobiada en
+                      cualquier momento de la organización de tu boda, ya sea
+                      que no encuentras X proveedor, no sabes cómo decorar la
+                      ceremonia o si te abruma que el día de tu boda estas
+                      pensando que no puedes tener todo bajo control, ya que es
+                      una realidad. Llámame, te ayudaré en todo lo que
+                      necesites, estés donde estés.
                     </p>
                     <div class="button-container">
                       <a class="btn-black" href="#!">Conóce más</a>
@@ -637,6 +669,44 @@
       AOS.init({
         disable: "mobile",
       });
+    </script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAm6x-qtyXMdKb7I8HSffnFBBdLui2qLNw",
+
+        authDomain: "iane-wedding-planner.firebaseapp.com",
+
+        projectId: "iane-wedding-planner",
+
+        storageBucket: "iane-wedding-planner.appspot.com",
+
+        messagingSenderId: "622155044165",
+
+        appId: "1:622155044165:web:28176ba1f7209ca8bb1a2c",
+
+        measurementId: "G-VWHQS9T9X8",
+      };
+
+      // Initialize Firebase
+
+      const app = initializeApp(firebaseConfig);
+
+      const analytics = getAnalytics(app);
     </script>
   </body>
 </html>
